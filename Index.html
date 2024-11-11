@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Adventure Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="lft_header">
+        <img
+          src="3.png"
+          alt="header Logo of sambhram institute of technology"
+          class="lftlogo"
+        />
+      </div>
+
+      <div class="rgt_header">
+        <h1 class="animated-text">
+          Play: Engage, explore, and experiment freely.<br />
+          Learn: Discover, grasp, and master knowledge
+        </h1>
+      </div>
+    </header>
+
+    <div class="game-container">
+      <div class="math-adventure-container">
+        <h1 id="title">Mathematics Adventure Game</h1>
+        <!-- Other content here -->
+      </div>
+
+      <p>Choose a math journey to improve your skills and earn rewards!</p>
+
+      <div class="level-selection">
+        <button onclick="startGame('addition')">Addition</button>
+        <button onclick="startGame('subtraction')">Subtraction</button>
+        <button onclick="startGame('multiplication')">Multiplication</button>
+        <button onclick="startGame('division')">Division</button>
+      </div>
+
+      <div id="difficulty-levels">
+        <h2>Select Difficulty</h2>
+        <button onclick="setDifficulty('easy')">Easy</button>
+        <button onclick="setDifficulty('medium')">Medium</button>
+        <button onclick="setDifficulty('hard')">Hard</button>
+      </div>
+
+      <div id="game-area" style="display: none">
+        <p id="question"></p>
+        <input type="number" id="answer" placeholder="Your Answer" />
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <p id="feedback"></p>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+
+      <div id="reward-area" style="display: none">
+        <h2>Congratulations!</h2>
+        <p>You earned a badge!</p>
+        <img src="badge.png" alt="Badge" />
+        <p>Unlocked Toy: <span id="toy"></span></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- <img src="sambhram_logo .png" alt="Sambhram Logo" class="footer-logo"> -->
+          <img src="2.png" alt="Sambhram Logo" class="footer-logo" />
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/ankit-kumar-singh-2a3a29245/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/ankitmeofficial"
+              target="_blank"
+              class="social-icon"
+            >
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
+                alt="GitHub"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/ankitmeofficial/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-icon"
+            >
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"
+                alt="Facebook"
+              />
+            </a>
+          </div>
+        </div>
+        <p class="footer-text">© 2024 RR Institute of Technology Hackthon .</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* for header container  */
+
+
+.header-container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 20px;
+  background-color: #065f5f; /* Teal */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+ /* lft_header{ */
+ .lftlogo{
+  width: 193px;
+    height: auto;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-bottom: 27px;
+    padding-right: 20px;
+    border-radius: 40px;
+ }
+
+
+.animated-text {
+    padding: 16px;
+    padding-left: 122px;
+    font-size: x-large;
+  /* font-size: 24px; */
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+  animation-delay: 2s; /* Delay the animation start by 2 seconds */
+}
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(100%);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.game-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1E1E1E;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #E0E0E0; /* Light text for contrast */
+  font-family: 'Courier New', monospace; /* Optional: typewriter font */
+  overflow: hidden; /* Hide overflow for typing effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: fit-content; /* Adjust width to fit content */
+  animation: typing 3s steps(30, end);
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+
+
+.math-adventure-container  {
+  color: #4CAF50;
+}
+.math-adventure-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1E1E1E;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #E0E0E0; /* Light text for contrast */
+  font-family: 'Courier New', monospace; /* Optional: typewriter font */
+  overflow: hidden; /* Hide overflow for typing effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#title {
+  display: inline-block; /* Required for width animation */
+  overflow: hidden; /* Ensures that text is hidden during animation */
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: typing 4s steps(30) infinite; /* Infinite typing without blinking cursor */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+#title {
+  display: inline-block; /* Required for width animation */
+  overflow: hidden; /* Ensures that text is hidden during animation */
+  border-right: 2px solid #E0E0E0; /* Simulated cursor effect */
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: typing 5s steps(30, end) infinite alternate, blink-caret 0.75s step-end infinite; /* Infinite typing and blinking */
+}
+
+/* Typing animation */
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #E0E0E0; }
+}
+
+.game-container p{
+  color: white;
+}
+
+.level-selection, #difficulty-levels, #game-area {
+  margin: 20px 0;
+}
+#difficulty-levels h2{
+  color: wheat;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#question {
+  font-size: 44px;
+  font-weight: bold;
+  /* Adjust the size as needed */
+  /* Add other styles if necessary */
+
+}
+
+
+
+#answer {
+  width: 70%;
+  padding: 12px;
+  font-size: 18px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+#answer:focus {
+  border-color: #45a049;
+  background-color: #e6ffe6;
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.2);
+}
+
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#reward-area img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+
+/* footer style start form here  */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  color: #ccc;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* college ka logo  */
+.footer-logo {
+  width: 80px; 
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
